@@ -95,10 +95,10 @@ Resources:
           AssignPublicIp: ENABLED
           SecurityGroups:
             - !GetAtt Alb2FargateContainers.GroupId
-          Subnets: ['subnet-580b0331','subnet-7102210a','subnet-c40f7b89']
+          Subnets: ['subnet-8ec872f4','subnet-223ff66e','subnet-89700ee0']
       LoadBalancers:
         - TargetGroupArn:
             Ref: MyFargateTargetGroup
           ContainerPort: 8080
           ContainerName: luna
-              
+          
