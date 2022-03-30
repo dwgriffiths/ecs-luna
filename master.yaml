@@ -63,7 +63,7 @@ Resources:
         Cluster: !GetAtt ECS.Outputs.Cluster
         DesiredCount: 1
         Listener: !GetAtt ALB.Outputs.Listener
-        Path: "/,/jobs/run_scraping_job/"
+        Path: "/,/status,/jobs,/scrape"
 
   LifecycleHook:
     Type: AWS::CloudFormation::Stack
